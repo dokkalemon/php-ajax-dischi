@@ -22,14 +22,16 @@ require_once __DIR__ . '/database.php';
         </div>
     </header>
 
-    <main>
+    <main class="container">
     <?php foreach ($database as $album) { ?>
-        <div class="card">
-            <img src="<?php echo $album['poster'] ?>" alt="">
-            <h2> <?php echo $album['title'] ?></h2>
-            <h4> <?php echo $album['author'] ?></h4>
-            <h3> <?php echo $album['year'] ?> </h3>
-            <h5><?php echo $album ['genre'] ?></h5>
+        <div class="card-container">
+            <div class="card">
+                <img src="<?php echo $album['poster'] ?>" alt="">
+                <h2> <?php echo $album['title'] ?></h2>
+                <h4> <?php echo $album['author'] ?></h4>
+                <h3> <?php echo $album['year'] ?> </h3>
+                <h5><?php echo $album ['genre'] ?></h5>
+            </div>
         </div>
     <?php } ?>
     </main>

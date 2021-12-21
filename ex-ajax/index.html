@@ -19,15 +19,25 @@
         </div>
     </header>
 
-    <section id="app" class="dischi">
-        <div class="card" v-for="(album, index) in album" :key="`album${index}`">
-            <img :src="album.poster" alt="">
-            <h2>{{ album.title }}</h2>
-            <h4>{{ album.author }}</h4>
-            <h3>{{ album.year }}</h3>
-            <h5>{{ album.genre }}</h5>
+    <main id="app" class="container">
+        <div class="card-container" v-for="(album, index) in album" :key="`album${index}`">
+           <div class="card debug">
+                <img :src="album.poster" alt="">
+                <h2>{{ album.title }}</h2>
+                <h4>{{ album.author }}</h4>
+                <h3>{{ album.year }}</h3>
+                <h5>{{ album.genre }}</h5>
+           </div>
         </div>
-    </section>
+    </main>
+
+
+
+
+
+
+
+
     
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
