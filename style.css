@@ -1,0 +1,54 @@
+/* General style*/
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility */
+body {
+    background-color: #182d3d;
+    font-family: sans-serif;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+
+/* Header */
+header {
+    background-color: #132431;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%
+}

@@ -10,9 +10,17 @@ require_once __DIR__ . '/database.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    
 </head>
 <body>
-    <header></header>
+<header class="full-width">
+        <div class="header container px-20">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+        </div>
+    </header>
 
     <main>
     <?php foreach ($database as $album) { ?>
