@@ -21,7 +21,7 @@
 
     <main id="app" class="container">
         <div class="card-container" v-for="(album, index) in album" :key="`album${index}`">
-           <div class="card debug">
+           <div class="card">
                 <img :src="album.poster" alt="">
                 <h2>{{ album.title }}</h2>
                 <h4>{{ album.author }}</h4>
