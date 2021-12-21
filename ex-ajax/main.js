@@ -14,7 +14,11 @@ const app = new Vue({
         getAlbum() {
             axios.get('http://localhost:8888/php-ajax-dischi/ex-ajax/database.php')
             .then(results => {
-                console.log(results);
+                
+                this.album = results.data;
+            })
+            .catch(err => {
+                console.log(err);
             })
         }
 
