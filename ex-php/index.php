@@ -22,9 +22,9 @@ require_once __DIR__ . '/database.php';
             <h4> <?php echo $album['author'] ?></h4>
             <h3> <?php echo $album['year'] ?> </h3>
             <h5><?php echo $album ['genre'] ?></h5>
-
         </div>
     <?php } ?>
     </main>
+
 </body>
 </html>
